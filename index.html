@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
     <style>
-        html {
+        @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+        * {
             font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         header {
             display: flex;
             position: fixed;
             justify-content: space-around;
             align-items: center;
-            min-height: 30px;
+            min-height: 60px;
             top: 0;
             box-sizing: border-box;
             padding: 0px 20px;
@@ -49,15 +54,37 @@
             margin: auto;
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
         #vid {
             margin-top: 80px;
             display: flex;
 
         }
+        .grid {
+            display: flex;
+            max-width: 1000px;
+        }
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90px;
+            width: 10vw;
+        }
+        .desc {
+            display: flex;
+            flex-direction: column;
+            height: 90px;
+            width: 80vw;
+            padding: 5px;
+        }
+
     </style>
     <head>
         <title>Welcome to Big V's Glass Emporium!</title>
+        <link href="/css/all.css" rel="stylesheet"> <!--load all styles -->
     </head>
     <body>
         <header>
@@ -83,7 +110,24 @@
         </div>
         <div class="container">
             <div class="grid">
-                
+                <div class="icon">
+                    <i class="fa fa-3x fa-fire">
+                    </i>
+                </div>
+                <div class="desc">
+                    <h2>woah cool stuff</h2>
+                    <p>we got glass up the wazoo we make them fresh we make them hot</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-fire">
+                    </i>
+                </div>
+                <div class="desc">
+                    <h2>woah cool stuff</h2>
+                    <p>we got glass up the wazoo we make them fresh we make them hot</p>
+                </div>
             </div>
         </div>
     </body>
